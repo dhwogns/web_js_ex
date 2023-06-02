@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Travel</title>
+</head>
+<body>
+    <img src="./img/logo.png" alt="logo" id="logo" width="165" height="100">
+    <div id = "menu">
+        <a onclick="home()" id="home">Home</a>
+        <a onclick="seoul()" id="seoul">Seoul</a>
+        <a onclick="paris()" id="paris">Paris</a>
+        <a onclick="tokyo()" id="tokyo">Tokyo</a>
+    </div>
+    <img src="./img/home.png" alt="airplane" id="photo" width="90%">
+    <script>
+        function home (){
+            document.getElementById('photo').src = './img/home.png';
+            document.getElementById('home').style.fontWeight = 'bold';
+            document.getElementById('seoul').style.fontWeight = 'normal';
+            document.getElementById('paris').style.fontWeight = 'normal';
+            document.getElementById('tokyo').style.fontWeight = 'normal';
+        }
+        function seoul (){
+            document.getElementById('photo').src = './img/seoul.png'
+            document.getElementById('home').style.fontWeight = 'normal';
+            document.getElementById('seoul').style.fontWeight = 'bold';
+            document.getElementById('paris').style.fontWeight = 'normal';
+            document.getElementById('tokyo').style.fontWeight = 'normal';
+        }
+        function paris (){
+            document.getElementById('photo').src = './img/paris.png';
+            document.getElementById('home').style.fontWeight = 'normal';
+            document.getElementById('seoul').style.fontWeight = 'normal';
+            document.getElementById('paris').style.fontWeight = 'bold';
+            document.getElementById('tokyo').style.fontWeight = 'normal';
+        }
+        function tokyo (){
+            document.getElementById('photo').src = './img/tokyo.png';
+            document.getElementById('home').style.fontWeight = 'normal';
+            document.getElementById('seoul').style.fontWeight = 'normal';
+            document.getElementById('paris').style.fontWeight = 'normal';
+            document.getElementById('tokyo').style.fontWeight = 'bold';
+        }
+        
+    </script>
+</body>
+</html>
