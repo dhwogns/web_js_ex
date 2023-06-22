@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="content">
+    <h2 id="tilte-1">
+        <ul id="list-1">
+            <li>사과</li>
+            <li>배</li>
+            <li>한라봉</li>
+            <li>키위</li>
+            <li>토마토</li>
+            <li>딸기</li>
+            <li>대추</li>
+            <li>감</li>
+        </ul>
+    </h2>
+    <h2 id="tilte-2">
+        <ul id="list-2">
+            <li>감귤</li>
+            <li>참다래</li>
+            <li>매실</li>
+            <li>수박</li>
+            <li>참외</li>
+            <li>블루베리</li>
+            <li>체리</li>
+            <li>바나나</li>
+        </ul>
+    </h2>
+</div>
+<script>
+    let nyTag = document.querySelector('#list-1');
+    /*
+    요소 노드 프로퍼티
+    element.children : 자식 요소 노드(엘리먼트의 자식 요소 모음 HTML Collention)
+    element.firstElementChild : 자식 요소 노드(엘리먼트의 첫 번째 자식 요소 하나)
+    element.lastElementChild : 자식 요소 노드(엘리먼트의 마지막 자식 요소 하나)
+    element.parrentElement : 부모 요소 노도(엘리먼트의 부모 요소 하나)
+    element.perviousElementSibling : 형제 요소 노드(엘리먼트의 이전 혹은 좌측에 있는 요소 하나)
+    element.nextElementSibling : 형제 요소 노드(엘리먼트의 다음 혹은 우측에 있는 요소 하나)
+
+    모든 노드에 대한 이동 프로퍼티
+    node.childNodes : 자식 노드 (node의 자식 노드 모음 NodeList)
+    node.firstChild : 자식 노드 (node의 첫번째 잣기 노드 하나)
+    node.lastChild : 자식 도드 (node의 마지막 자식 노드 하나)
+    node.parentNode : 부모 노드 (node의 부모 요소 하나)
+    node.previousSibling : 형제 노드 (node의 이전 혹은 좌측에 있는 node 하나)
+    node.nextSibling : 형제 노드 (node의 다음 혹은 우측에 있는 node 하나)
+    */
+    <!--
+    innerHTML : HTML 코드를 문자열로 리턴해 준다.
+    outerHTML : 요소 노드 전체적인 HTML 코드를 문자열로 리턴
+    textContent : 요소 안의 내용들 중에서 HTML 태그 부분을 제외하고 글자를 가져온다. 전체를 text로 처리한다.
+    -->
+</script>
+</body>
+</html>
